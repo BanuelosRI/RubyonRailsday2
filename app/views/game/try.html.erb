@@ -1,0 +1,13 @@
+<p>Your number is <%= @result%> !</p>
+<p><%= @guess.to_i %></p>
+<p>You have tried <%= cookies[:count].to_i%> times</p>
+
+<p>Hello <%= @name %></p>
+
+<form action="game" method="get">
+  <label for="number_id">Number: </label>
+  <input type="number" name="guess" id="number_id" />
+  <label for="user_name_id">Name: </label>
+  <input type="text" name="user_name" id="user_name_id" />
+  <input type="submit" value="submit" />
+</form>
